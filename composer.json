@@ -1,0 +1,24 @@
+{
+    "name": "wucdbm/login-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony ~3.0 Bundle that eases logging users to your Symfony application.",
+    "keywords": ["login manager", "login bundle", "hwi oauth token login integration", "oauth login bundle", "wucdbm"],
+    "authors": [
+        {
+            "name": "Martin Kirilov",
+            "email": "wucdbm@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.1",
+        "symfony/symfony": "~3.0"
+    },
+    "suggest": {
+        "hwi/oauth-bundle": "~0.5"
+    },
+    "autoload": {
+        "psr-4": { "Wucdbm\\Bundle\\LoginBundle\\": "" }
+    },
+    "license": "GPL-3.0"
+}
