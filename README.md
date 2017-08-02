@@ -23,3 +23,7 @@ wucdbm_login:
                 always_authenticated: true
                 user_provider: app.auth.user_provider
 ```
+
+# TODOs
+
+- Possibly extend UsernamePasswordToken and make it configurable, again with the option to always be considered authenticated?
