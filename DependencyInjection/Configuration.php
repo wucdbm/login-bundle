@@ -40,6 +40,7 @@ class Configuration implements ConfigurationInterface {
                                             })->thenInvalid(sprintf('Configuration "token_class" must be a child of %s, %%s provided', OAuthToken::class))
                                         ->end()
                                     ->end()
+                                    ->scalarNode('use_username_password_token')->defaultFalse()->end()
                                     ->scalarNode('always_authenticated')->defaultFalse()->end()
                                     ->scalarNode('user_provider')->defaultValue('hwi_oauth.user.provider')->end()
                                 ->end()

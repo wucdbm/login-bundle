@@ -97,7 +97,11 @@ class LoginManager {
 
         $resourceOwner->isCsrfTokenValid($state);
 
-        $token = $this->createHWIOAuthToken($accessToken, $user, $resourceOwner->getName());
+        if ($this->config['hwi_oauth']['use_username_password_token']) {
+            $token = $this->createUsernamePasswordToken($user);
+        } else {
+            $token = $this->createHWIOAuthToken($accessToken, $user, $resourceOwner->getName());
+        }
 
         $this->logInToken($token, $user, $response);
     }
