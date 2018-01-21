@@ -20,5 +20,5 @@
     "autoload": {
         "psr-4": { "Wucdbm\\Bundle\\LoginBundle\\": "" }
     },
-    "license": "GPL-3.0"
+    "license": "MIT"
 }
